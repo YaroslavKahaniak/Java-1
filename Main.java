@@ -1,18 +1,19 @@
+
 public class Main {
-	 public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	        Hotel Yorik = new Hotel();
-	        Hotel Rius = new Hotel (490, "Rius", 22, 350.5);
-	        Hotel Leff = new Hotel(8560, "Leff", 36, 220.0, 5, "Petruk", "Gnat");
+		Hotel yorik = new Hotel();
+		Hotel rius = new Hotel(490, "Rius", 22, 350.5);
+		Hotel leff = new Hotel(8560, "Leff", 36, 220.0, 5, "Petruk", "Gnat");
 
-	        System.out.println(Yorik.toString());
-	        System.out.println(Rius.toString());
-	        System.out.println(Leff.toString());
+		yorik.toString();
+		rius.toString();
+		System.out.println(leff.toString());
 
-	        System.out.println("hotel Budget : " + Yorik.printHotelBudget());
-	        System.out.println("hotel Budget : " + Rius.printHotelBudget());
-	        System.out.println("hotel Budget : " + Leff.printHotelBudget());
-            System.out.println("hotelBudget printed by static method: " + Hotel.printStaticHotelBudget());
+		System.out.println("hotel Budget : " + yorik.printHotelBudget());
+		System.out.println("hotel Budget : " + rius.printHotelBudget());
+		System.out.println("hotel Budget : " + leff.printHotelBudget());
+		System.out.println("hotelBudget printed by static method: " + Hotel.printStaticHotelBudget());
 
-	    }
+	}
 }

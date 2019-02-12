@@ -5,81 +5,74 @@ public class Hotel {
 	int numberOfRooms;
 	private double avarageCost;
 	private int rate;
-	protected String vipClient_1;
-	protected String vipClient_2;
+	protected String vipClient1;
+	protected String vipClient2;
 
-public Hotel () {
-	visitorsPerYear = 0;
-	hotelName = "unknown";
-	numberOfRooms = 0;
-	avarageCost = 0;
-	rate = 0;
-	vipClient_1 = "unknown";
-	vipClient_2 = "unknown";
-}
+	public Hotel() {
+		visitorsPerYear = 0;
+		hotelName = "unknown";
+		numberOfRooms = 0;
+		avarageCost = 0;
+		rate = 0;
+		vipClient1 = "unknown";
+		vipClient2 = "unknown";
+	}
 
-public Hotel(int visitorsPerYear, String hotelName, int numberOfRooms, double avarageCost) {
-	this.visitorsPerYear = visitorsPerYear;
-	this.hotelName = hotelName;
-	this.numberOfRooms = numberOfRooms;
-	this.avarageCost = avarageCost;
-}
+	public Hotel(int visitorsPerYear, String hotelName, int numberOfRooms, double avarageCost) {
+		this.visitorsPerYear = visitorsPerYear;
+		this.hotelName = hotelName;
+		this.numberOfRooms = numberOfRooms;
+		this.avarageCost = avarageCost;
+	}
 
-public Hotel(int visitorsPerYear, String hotelName, int numberOfRooms, double avarageCost,
-		int rate, String vipClient_1, String vipClient_2){
-	this.visitorsPerYear = visitorsPerYear;
-	this.hotelName = hotelName;
-	this.numberOfRooms = numberOfRooms;
-	this.avarageCost = avarageCost;
-	this.rate = rate;
-	this.vipClient_1 = vipClient_1;
-	this.vipClient_2 = vipClient_2;
-}
+	public Hotel(int visitorsPerYear, String hotelName, int numberOfRooms, double avarageCost, int rate,
+			String vipClient1, String vipClient2) {
+		this(visitorsPerYear, hotelName, numberOfRooms, avarageCost);
+		this.rate = rate;
+		this.vipClient1 = vipClient1;
+		this.vipClient2 = vipClient2;
+	}
 
-public String toString () {
-	System.out.println ("Number of visitors per year: " + visitorsPerYear);
-	System.out.println ("Name of hotel: " + hotelName);
-	System.out.println ("Number of rooms: "+ numberOfRooms);
-	System.out.println ("Avarage cost of one room: " + avarageCost);
-	System.out.println ("Hotel rate: " + rate);
-	System.out.println ("First VIP client name: " + vipClient_1);
-	System.out.println ("Second VIP client name: " + vipClient_2);
-	return "";
-}
+	public String toString() {
+		return "Visitors per year: " + visitorsPerYear + "\n" + "Name of hotel: " + hotelName + "\n"
+				+ "Number of rooms: " + numberOfRooms + "\n" + "Avarage cost of one room: " + avarageCost + "\n"
+				+ "Hotel rate: " + rate + "\n" + "First VIP client name: " + vipClient1 + "\n"
+				+ "Second VIP client name: " + vipClient2 + "\n";
+	}
 
-public void resetValues(int visitorsPerYear, String hotelName, int numberOfRooms, double avarageCost,
-		int rate, String vipClient_1, String vipClient_2){
-	this.visitorsPerYear = visitorsPerYear;
-	this.hotelName = hotelName;
-	this.numberOfRooms = numberOfRooms;
-	this.avarageCost = avarageCost;
-	this.rate = rate;
-	this.vipClient_1 = vipClient_1;
-	this.vipClient_2 = vipClient_2;
-}
+	public void resetValues(int visitorsPerYear, String hotelName, int numberOfRooms, double avarageCost, int rate,
+			String vipClient1, String vipClient2) {
+		this.visitorsPerYear = visitorsPerYear;
+		this.hotelName = hotelName;
+		this.numberOfRooms = numberOfRooms;
+		this.avarageCost = avarageCost;
+		this.rate = rate;
+		this.vipClient1 = vipClient1;
+		this.vipClient2 = vipClient2;
+	}
 
-public void setavarageCost (int avarageCost){
-	this.avarageCost = avarageCost;
-}
+	public void setAvarageCost(int avarageCost) {
+		this.avarageCost = avarageCost;
+	}
 
-public double getavarageCost () {
-	return avarageCost;
-}
+	public double getAvarageCost() {
+		return avarageCost;
+	}
 
-public void setrate (int rate){
-	this.rate = rate;
-}
+	public void setRate(int rate) {
+		this.rate = rate;
+	}
 
-public double getrate () {
-	return rate;
-}
+	public double getRate() {
+		return rate;
+	}
 
-public static int printStaticHotelBudget() {
-    return hotelBudget;
-}
+	public static int printStaticHotelBudget() {
+		return hotelBudget;
+	}
 
-public int printHotelBudget() {
-    return hotelBudget;
-}
+	public int printHotelBudget() {
+		return hotelBudget;
+	}
 
 }
